@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--IMPORTANDO O ARQUIVO CSS-->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--IMPORTANDO A FONTE USADA NA PÁGINA (GOOGLE FONTS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Portfólio Pessoal</title>
+</head>
+<body>
+    <!--CABEÇALHO E ÁREA DE NAVEGAÇÃO (MENU) DA PÁGINA-->
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="exibirConteudo('sobre_mim')">SOBRE MIM</a></li>
+                <li><a href="#" onclick="exibirConteudo('formacao')">FORMAÇÃO</a></li>
+                <li><a href="#" onclick="exibirConteudo('portfolio')">PORTFÓLIO</a></li>
+                <li><a href="#" onclick="exibirConteudo('contato')">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--CONTEÚDO 1: SOBRE MIM-->
+    <section id="sobre_mim" class="conteudo">
+        <h1>Sobre mim</h1>
+
+    
+        <img src="imagens/andressa_foto.jpg" alt="Uma foto de rosto minha" id="andressa_foto">
+        <p>Olá! Meu nome é Andressa, tenho 20 anos de idade e moro em Porto Seguro - Bahia. Sou
+            uma pessoa movida pela criatividade. Desde pequena, tenho paixão por desenhar e pintar, além
+            de outras atividades que me permitem expressar meus sentimentos e ideias de forma única. Um dos
+            meus maiores sonhos é transformar essa paixão em profissão e, no futuro, poder viver deste universo
+            artístico.
+        </p><br>
+        <p>Além da arte, também cultivo um carinho especial pela jardinagem — hobby incentivado pelo meu 
+            companheiro — e que hoje me traz calma e inspiração, e adoro mergulhar em filmes e desenhos animados.
+        </p><br>
+        <p>Nos últimos anos, descobri um novo interesse: a área de Tecnologia da Informação. 
+            Minha jornada nesse caminho começou quando ingressei no IFBA, onde criei afinidade 
+            principalmente com o desenvolvimento web e de software, em especial com a parte de front-end. 
+            Esse despertar me motivou a dar o próximo passo e ingressar na faculdade de 
+            Análise e Desenvolvimento de Sistemas, buscando aprofundar meus conhecimentos e unir minha 
+            criatividade ao mundo da tecnologia.
+        </p><br>
+        <p>
+            Sou determinada, dedicada e sempre em busca de aprender algo novo. Acredito que minha 
+            força está em enxergar o valor nos detalhes e em transformar ideias em projetos concretos.
+        </p>
+    </section>
+
+    <!--CONTEÚDO 2: FORMAÇÃO-->
+    <section id="formacao" class="conteudo">
+        <h1>Formação</h1>
+    </section>
+
+    <!--CONTEÚDO 3: PORTFÓLIO-->
+    <section id="portfolio" class="conteudo">
+        <h1>Portfólio</h1>
+    </section>
+
+    <!--CONTEÚDO 4: CONTATO-->
+    <section id="contato" class="conteudo">
+        <h1>Contato</h1>
+    </section>
+
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <p id="texto_rodape">Site criado por: <a href="https://github.com/andressacampeche">Andressa Campeche</a></p>
+    </footer>
+
+    <!--IMPORTANDO O ARQUIVO JAVASCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>

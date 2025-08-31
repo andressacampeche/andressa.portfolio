@@ -1,0 +1,87 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+}
+body{
+    background: url('imagens/background.png') no-repeat center center;
+    background-size: cover;
+}
+.menu{
+    background-color: rgb(33, 33, 33);
+    padding: 5px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding-inline: 20px;
+}
+.menu ul li a:hover{
+    color: rgb(186, 186, 186);
+    cursor: pointer;
+}
+.menu ul li{
+    display: inline-block;
+}
+#formacao, #portfolio, #contato{
+    display: none;
+}
+.conteudo{
+    background-color: rgb(255, 255, 255, 0.92) ;
+    width: auto;
+    height: fit-content;
+    margin: 30px;
+    padding: 30px;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(35,32,73,0.32);
+    overflow: hidden;
+}
+.conteudo::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h1{
+    margin-bottom: 20px;
+    text-align: left;
+    color: rgb(33, 33, 33);
+}
+p{
+    line-height: 25px;
+}
+#texto_rodape a{
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+}
+#andressa_foto{
+    width: auto;
+    height: 280px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.rodape{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
