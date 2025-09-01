@@ -8,8 +8,8 @@
     <!--IMPORTANDO A FONTE USADA NA PÁGINA (GOOGLE FONTS)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <title>Portfólio Pessoal</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
     <header class="menu">
         <nav>
             <ul>
-                <li><a href="#" onclick="exibirConteudo('sobre_mim')">SOBRE MIM</a></li>
+                <li><a href="#" class="ativo" onclick="exibirConteudo('sobre_mim')">SOBRE MIM</a></li>
                 <li><a href="#" onclick="exibirConteudo('formacao')">FORMAÇÃO</a></li>
                 <li><a href="#" onclick="exibirConteudo('portfolio')">PORTFÓLIO</a></li>
                 <li><a href="#" onclick="exibirConteudo('contato')">CONTATO</a></li>
@@ -28,9 +28,8 @@
     <!--CONTEÚDO 1: SOBRE MIM-->
     <section id="sobre_mim" class="conteudo">
         <h1>Sobre mim</h1>
-
     
-        <img src="imagens/andressa_foto.jpg" alt="Uma foto de rosto minha" id="andressa_foto">
+        <img src="imagens/andressa_foto.jpg" alt="Uma foto de rosto minha" class="andressa_foto">
         <p>Olá! Meu nome é Andressa, tenho 20 anos de idade e moro em Porto Seguro - Bahia. Sou
             uma pessoa movida pela criatividade. Desde pequena, tenho paixão por desenhar e pintar, além
             de outras atividades que me permitem expressar meus sentimentos e ideias de forma única. Um dos
@@ -39,6 +38,9 @@
         </p><br>
         <p>Além da arte, também cultivo um carinho especial pela jardinagem — hobby incentivado pelo meu 
             companheiro — e que hoje me traz calma e inspiração, e adoro mergulhar em filmes e desenhos animados.
+        </p><br>
+        <p>Possuo um perfil no Instagram <a href="https://www.instagram.com/kikisuk_/">(@kikisuk_)</a>, onde compartilho os 
+            meus trabalhos de ilustração digital.
         </p><br>
         <p>Nos últimos anos, descobri um novo interesse: a área de Tecnologia da Informação. 
             Minha jornada nesse caminho começou quando ingressei no IFBA, onde criei afinidade 
@@ -51,21 +53,60 @@
             Sou determinada, dedicada e sempre em busca de aprender algo novo. Acredito que minha 
             força está em enxergar o valor nos detalhes e em transformar ideias em projetos concretos.
         </p>
+    
     </section>
 
     <!--CONTEÚDO 2: FORMAÇÃO-->
     <section id="formacao" class="conteudo">
         <h1>Formação</h1>
+
+        <img src="imagens/andressa_formatura.jpg" alt="Uma foto minha na formatura" class="andressa_foto">
+        <p>Toda a minha jornada educacional aconteceu em Porto Seguro. Concluí o ensino fundamental na 
+            Escola Escada do Tempo e, em 2020, ingressei no IFBA, onde tive meu 
+            primeiro contato com a área de Tecnologia da Informação. Durante esse período, em 2024, 
+            estagiei no Departamento de TI da Prefeitura Municipal de Porto Seguro, adquirindo experiência 
+            prática em desenvolvimento e suporte tecnológico. Além disso, neste mesmo ano, participei do 
+            projeto Conectando Saber e Prática, no qual visitamos as escolas públicas do município oferecendo
+            serviços técnicos de montagem e manutenção de computadores. Me formei Técnica em Informática em março de 2025.
+        </p><br>
+        <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) na Uninter, aprofundando 
+            meus conhecimentos em programação, desenvolvimento web e design de interfaces.
+        </p><br>
+        <p>Além da formação acadêmica, realizei cursos extracurriculares de inglês no IFBA e me considero nível intermediário 
+            no idioma, o que me permite acompanhar conteúdos técnicos e me comunicar de forma eficaz em contextos profissionais.
+        </p>
     </section>
 
     <!--CONTEÚDO 3: PORTFÓLIO-->
     <section id="portfolio" class="conteudo">
         <h1>Portfólio</h1>
+
+        <p>Nesta seção, compartilho meus projetos e trabalhos desenvolvidos durante o curso, incluindo sites e aplicações 
+            que criei ou refiz a partir de exemplos apresentados em sala de aula.
+        </p><br>
+        <ul class="itens_portfolio">
+            <li><a href="https://andressacampeche.github.io/fds.uninter/">Site de Apresentação: uma breve apresentação sobre mim e meus interesses</a></li>
+            <li><a href="https://andressacampeche.github.io/tela.cadastro/">Tela simples de cadastro</a></li>
+            <li><a href="https://andressacampeche.github.io/homepage.simples/">Homepage simples de um site</a></li>
+        </ul>
     </section>
 
     <!--CONTEÚDO 4: CONTATO-->
     <section id="contato" class="conteudo">
         <h1>Contato</h1>
+
+        <form class="form_contato" onsubmit="return false;">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit" class="btenviar" onclick="confirmarEnvio()">Enviar</button>
+        </form>
     </section>
 
     <!--RODAPÉ-->
